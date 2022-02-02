@@ -97,7 +97,7 @@ Let's now discuss the idea behind each school as revealed by the wordcloud and c
 - Aristotle: Some of the most used words are animal, man, body, reason, case, and cause, words that indicate rationality. Aristotle was indeed a supporter of reasoning. 
 - Daoism: tao and heaven underline harmony and natural order. At the same time, sage and people could indicate patience and compassion towards the others.
 - Stoicism: as indicated by the wordcloud the main ideas of stoicism are wisdom (mind), justice (truth), and courage (soul).
-- Hobbes: exist, existence, freedom, order, relation underline Hobbes's concern: the sociopolitical problem, i.e., how can people live together in communities peacefully?
+- Hobbes: exist, existence, freedom, order, relation, commonwealth underline Hobbes's concern: the sociopolitical problem, i.e., how can people live together in communities peacefully?
 - Rationalism: Some of the most common words are mind, idea, know, reason, and think. The usage of these words bolsters the idea that all aspects of life can be grasped through logical principles.
 - Empiricism: Words such as idea, body, object, reason, make, and produce indicate evidence, experience. That is exactly what empiricism is about, the idea that all concepts originate in experience.
 - German idealism: concept, consciousness, determination, think, reason and nature are words commonly used among the german idealists. If we compare these words to the ones used in empiricism we can understand that german idealism contradicst empriricsm by supporting that all knowledge comes from the mind.
@@ -110,11 +110,26 @@ Let's now discuss the idea behind each school as revealed by the wordcloud and c
 - Analytic: think, case, know, fact, theory, and question show that the philoshopers of the analytic school were supporters of logic and reasons. At the same time, the words term, word, and sentence reveal that the analytic school is characterized by an emphasis on linguistics. 
 - Continental:  this school of thought is all about politics, desire, and freedom as indicated by the words form, man, must, order, and relation.
 
-Beside the difference in some ideas behind each school of philosophy, how do these schools differ in terms of writing style? It is clear that the philosopers of the older schools used words that are now antiquated.
+Besides the difference in some ideas behind each school of philosophy, how do these schools differ in terms of writing style? It is clear that the philosopers of the older schools used words that are now antiquated.
 
-So **what are some of the main philosophical categories**? idealism, rationality, spirituality, religion, sociopolitics, capitalism vs communism, feminism
+So **what are some of the main philosophical categories**? idealism, rationalism, religion, sociopolitics, capitalism vs communism, feminism
 
 ### Topic Modeling
+
+Now that we have figured out the main ideas of each school, we should try to fully understand the ideas they have in common. To do so, we will use topic models, a type of statistical language model that is used to reveal hidden structure in collection of documents. In this case, we will use topic modeling (by using `LatentDirichletAllocation` from `sklearn`) to perform tagging, namely to identify abstract “topics” that occur in the colection of all the philosophical texts.
+
+After experimenting with multiple topic numbers as well as parameters for the `CountVectorizer`, we fit the LDA model using 6 topics. 
+
+The following figures show:
+- the first 8 words of each topic.
+- The heatmap indicates the similarity score between each topic and each school of philosophy. 
+
+<p float="left">
+  <img src="../figs/topic-modeling/lda-model-topics.png" style="width: 450px;"/>
+  <img src="../figs/topic-modeling/heatmap.png" style="width: 550px;"/>
+</p>
+
+The heatmap indicates the similarity score between each topic and each school of philosophy. Some schools have nonzero similarity scores with more than one topic, because our model classified some of the respective texts in different classes. Although overall the classification makes sense, some schools (e.g., feminism, kierkegaard) have been misclassified. However, it is clear that the most schools touch upon the same topics, namely rationalism (reason, concept), consciousness (self, consciousness), human nature (body, man, part, nature).
 
 ### Sentiment Analysis
 
@@ -137,13 +152,23 @@ The following figures show how the philosophers of each school react towards the
     <img src="../figs/sentiment/sentiment-woman.png" style="width: 500px;"/>
 </p>
 
-Perhaps a positive/negative sentiment analysis should be performed in this case
+Since many schools of philosophy touch the ideas of god, mind, reason, and essentially also labor, we should take a close look at the respective barplots and try to interpret them.  
 
-### Conclusion
+Regarding *reason*, we cannot say that there is a clear trend. During the time of certain schools of thought, e.g., rationalism, reasoning was the main idea. However, we can see that the dominant emotions were fear and sadness, which means that people were not particularly happy and actually quite sad by the idea that all aspects of life can be explained through logical reasoning. At the same time we can see that they were pretty surprised by all the philosophical explanations about the *mind*. Rationalism, Germal Idealism, and Analytic put the mind at the center of behavior. The evolution of philosophy and neuroscience revealed surprising facts about the brain that could cause excitement but also fear.
+
+Let's now talk about *labor*: from the above barplot we observe that overall the negative emotions towards *labor* become more and more dominant over the course of the time. In the past and especially in the very distant past, philoshopers had a more positive attitude towards labor. 
+
+From the barplot that corresponds to *god* we can observe that especially in the case of capitalism there were only negative and somewhat neutral (surprise) feelings about god. This makes sense considering that in capitalism in a sense the economists play the role of god. We can also notice that there is a trend as far as happiness is concerned. Overall, there is a decrease in happiness which confirms that people have started distancing themselves from god.
+
+An idea worth exploring would be to calculate the change in sentiment (positive, negative) for each school. Which schools would we expect to go from net positive to net negative and reverse? We will discuss this in the next blog post!
+
+### Conclusions
+
+In this blog post we talked about the different schools of philosophy -their main ideas and similarities- as well as the evolution of the ideas around the mind, the reason, the labor, and the god over time. Now we are a little bit better equipped to compare historical texts and ideas to contemporary ones (coming from books, articles, or even social media posts) in an attempt to understand the core beliefs people share these days. And maybe such a comparison will be the idea behind a future post!
 
 
 ### *Potential Issues*
 
 The following issues should be taking into consideration when reading the blog.
 - Different schools have different number of texts and different number of total words. Consequently, it is possible that we do not have sufficient data for some schools of philosophy.
-- Although excited about the opportunity to further explore the evolution of philosophy, I still have very much to learn. The preprocessing and analysis of the data would certainly benefit from expertise in this field. For example, when removing stopwords, I encountered words that at first seems insignificant, such as "must". However, what if the worλd of philosophy "must" is an important word denoting submission or command?
+- Although excited about the opportunity to further explore the evolution of philosophy, I still have very much to learn. The preprocessing and analysis of the data would certainly benefit from expertise in this field. For example, when removing stopwords, I encountered words that at first seems insignificant, such as "must". However, what if in the world of philosophy "must" is an important word denoting submission or command?
