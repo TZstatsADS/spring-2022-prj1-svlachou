@@ -129,8 +129,9 @@ The following figures show:
   <img src="../figs/topic-modeling/heatmap.png" style="width: 550px;"/>
 </p>
 
-The heatmap indicates the similarity score between each topic and each school of philosophy. Some schools have nonzero similarity scores with more than one topic, because our model classified some of the respective texts in different classes. Although overall the classification makes sense, some schools (e.g., feminism, kierkegaard) have been misclassified. However, it is clear that the most schools touch upon the same topics, namely rationalism (reason, concept), consciousness (self, consciousness), human nature (body, man, part, nature).
+Although the topics are overlapping each other in some extent, we get a clear idea of the dominant school categories, namely consciousness, rationalism, justice, sociopolitics, capitalism vs communism, feminism, and love, which are close to the ones we discussed earlier.
 
+The heatmap indicates the similarity score between each topic and each school of philosophy. Some schools have nonzero similarity scores with more than one topic, because our model classified some of the respective texts in different classes. Although overall the classification makes sense, some schools (e.g., feminism, kierkegaard) have been misclassified. However, it is clear that the most schools touch upon the same topics, namely rationalism (reason, concept), consciousness (self, consciousness), human nature (body, man, part, nature).
 ### Sentiment Analysis
 
 From our so far analysis, we can reason that there are topics (e.g., labor, reason, mind, soul) that characterize some of the schools. However, although some philoshophers are in favor of some of those topics some others are against them. For example, Kierkegaard supports the idea that people should have total faith in god, while the Nitzsche school is of the opinion that god doesn't exist. So, wouldn't it be interesting to figure out how the philosophical stance or else the emotions of the philosophers towards those topics have changed over time?
