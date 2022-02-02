@@ -18,15 +18,15 @@ The dataset contains 396,427 sentences from over 69 texts spanning 18 major scho
 
 Although the story of philoshopy starts hundrends of years before Christ, the first philosophical texts in this dataset are from 350BC, when the Greek philosopher Plato founded a school of thought that is named after him. From the following graph it is evident that there is a huge decrease in the number of philosophical publications around the Middle Ages, which makes sense considering that at that time life was particularly hard. After the onset of Renaissance, philosophy started burgeoning again with multiple schools being founded.
 
-<img src="../figs/school_period.png"/>
+<img src="../figs/general/school_period.png"/>
 
 Given that multiple schools and philosophers are represented in the dataset, it would be interesting to understand which are the schools that have produced the most work in terms of number of texts and how many authors are part of each school.  
 
 The following graphs show the number of authors per school, the number of texts per school, and the number of texts per author. It is clear that the schools that are represented by just one author have procuded only one text with the exception of nietzsche. This makes sense considering that some schools that have the name of the a specific philosopher (e.g., the Plato and Aristotle schools) refer to the philosophical positions of a single person.
 
-<img src="../figs/authors_per_school.png"/>
+<img src="../figs/general/authors_per_school.png"/>
 
-<img src="../figs/texts_per_school.png"/>
+<img src="../figs/general/texts_per_school.png"/>
 
 Given that Plato -the founder of the Plato school of philosophy- has largely contributed to the idea of Laconian speech (i.e., brevity or terseness of expression), it would be interesting to perfrom an analysis on the lenght of the sentences per school to see whether there is a trend on the level of laconism.  
 
@@ -34,7 +34,7 @@ As shown in the following graph, the plato school of thought -that is actually t
 
 If we take into consideration the period of time each philosophical school spans (oldest: plato, most recent: analytic, continental, feminism), we can safely conclude that there is no correlation between the time period and the level of laconism.
 
-<img src="../figs/length_per_school.png"/>
+<img src="../figs/general/length_per_school.png"/>
 
 ### Data preprocessing
 
@@ -52,43 +52,43 @@ Let's now try to understand the main ideas and characteristics of each school of
 The following wordclouds are visual representations of the most common words in the texts of each school, where the size of the fonts indicates the importance of the word. The wordclouds showcase the differences between schools, not only in terms of ideas but also in terms of writing style.
 
 <p float="left">
-  <img src="../figs/wordcloud-PLATO.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-ARISTOTLE.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-PLATO.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-ARISTOTLE.png" style="width: 500px;"/>
 </p>
 
 <p float="left">
-  <img src="../figs/wordcloud-DAOISM.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-STOICISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-DAOISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-STOICISM.png" style="width: 500px;"/>
 </p>
 
 <p float="left">
-  <img src="../figs/wordcloud-HOBBES.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-RATIONALISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-HOBBES.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-RATIONALISM.png" style="width: 500px;"/>
 </p>
 
 <p float="left">
-  <img src="../figs/wordcloud-EMPIRICISM.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-GERMAN IDEALISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-EMPIRICISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-GERMAN IDEALISM.png" style="width: 500px;"/>
 </p>
 
 <p float="left">
-  <img src="../figs/wordcloud-CAPITALISM.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-KIERKEGAARD.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-CAPITALISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-KIERKEGAARD.png" style="width: 500px;"/>
 </p>
 
 <p float="left">
-  <img src="../figs/wordcloud-COMMUNISM.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-NIETZSCHE.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-COMMUNISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-NIETZSCHE.png" style="width: 500px;"/>
 </p>
 
 <p float="left">
-  <img src="../figs/wordcloud-PHENOMENOLOGY.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-FEMINISM.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-PHENOMENOLOGY.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-FEMINISM.png" style="width: 500px;"/>
 </p>
 
 <p float="left">
-  <img src="../figs/wordcloud-ANALYTIC.png" style="width: 500px;"/>
-  <img src="../figs/wordcloud-CONTINENTAL.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-ANALYTIC.png" style="width: 500px;"/>
+  <img src="../figs/wordcloud/wordcloud-CONTINENTAL.png" style="width: 500px;"/>
 </p>
 
 Let's now discuss the idea behind each school as revealed by the wordcloud and compare it with our knowledge about the respective philosophical view. We will discuss the schools in chronological order.
@@ -125,16 +125,16 @@ Emotions are associated with thoughts, feelings, and behavioral responses. The e
 The following figures show how the philosophers of each school react towards the topics *mind, reason, soul, god, labor, and woman*. The schools are presented in chronological order.
 
 <p float="left">
-    <img src="../figs/sentiment-mind.png" style="width: 500px;"/>
-    <img src="../figs/sentiment-reason.png" style="width: 500px;"/>
+    <img src="../figs/sentiment/sentiment-mind.png" style="width: 500px;"/>
+    <img src="../figs/sentiment/sentiment-reason.png" style="width: 500px;"/>
 </p>
 <p float="left">
-    <img src="../figs/sentiment-soul.png" style="width: 500px;"/>
-    <img src="../figs/sentiment-god.png" style="width: 500px;"/>
+    <img src="../figs/sentiment/sentiment-soul.png" style="width: 500px;"/>
+    <img src="../figs/sentiment/sentiment-god.png" style="width: 500px;"/>
 </p>
 <p float="left">
-    <img src="../figs/sentiment-labor.png" style="width: 500px;"/>
-    <img src="../figs/sentiment-woman.png" style="width: 500px;"/>
+    <img src="../figs/sentiment/sentiment-labor.png" style="width: 500px;"/>
+    <img src="../figs/sentiment/sentiment-woman.png" style="width: 500px;"/>
 </p>
 
 Perhaps a positive/negative sentiment analysis should be performed in this case
