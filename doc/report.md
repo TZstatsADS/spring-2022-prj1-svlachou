@@ -4,7 +4,7 @@
 
 # Evolution of Philoshopical Ideas
 
-Philosophy comes from the greek words “philo” (love) and “sophia” (wisdom). The study of philosophy is of enormous interest, since its evolution reflects the evolution of ideas, beliefs, and the human existence in general. So, we are going to discuss the evolution of philosophy over time. Our goal is to eventually answer the following questions:
+Philosophy comes from the greek words *“philo”* (love) and *“sophia”* (wisdom). The study of philosophy is of enormous interest, since its evolution reflects the evolution of ideas, beliefs, and the human existence in general. So, we are going to discuss the evolution of philosophy over time. Our goal is to eventually answer the following questions:
 - Which are the main ideas and characteristics of each school of thought?
 - Are there similarities between different schools?
 - How have people’s emotions towards specific topics (e.g., god, mind, soul) changed over time?
@@ -40,7 +40,7 @@ If we take into consideration the period of time each philosophical school spans
 
 Before analyzing the data and trying to answer the questions mentioned in the beginning of this blog, it is important to perform data cleaning and make the content suitable for our analysis.  
 
-For the purposes of this project, it was decided that the following cleaning should be performed:
+For the purposes of this project, it was decided that the following cleaning should be performed - using `nltk`:
 - all punctuation marks should be removed  
 - all english stopwords as well as some words (e.g., list, say, one, therefore) that are used many times in the texts but do not add value to the analysis from a philosophical point of view should be removed
 - the sentences should be tokenized and lemmatized. Since our analysis is heavily based on the most used words in each text/school, we need to use lemmatization to do morphological analysis and group together the different forms of a word so that they can be analyzed as a single item. Although the creator of the dataset has tokenized and lemmatized the sentences, we decided to redo that processing for data integrity.
@@ -49,7 +49,7 @@ For the purposes of this project, it was decided that the following cleaning sho
 
 Let's now try to understand the main ideas and characteristics of each school of thought as well as the differences in thought and positions between the schools. To do so we will figure out the words that are the most frequent in the texts representing each school. Having removed some very common words -known as stopwords- we expect to encounter meaningful words that are indicative of the philosophical ideas of each school.
 
-The following wordclouds are visual representations of the most common words in the texts of each school, where the size of the fonds indicates the importance of the word. The wordclouds showcase the differences between schools, not only in terms of ideas but also in terms of writing style.
+The following wordclouds are visual representations of the most common words in the texts of each school, where the size of the fonts indicates the importance of the word. The wordclouds showcase the differences between schools, not only in terms of ideas but also in terms of writing style.
 
 <p float="left">
   <img src="../figs/wordcloud-PLATO.png" style="width: 500px;"/>
@@ -93,26 +93,26 @@ The following wordclouds are visual representations of the most common words in 
 
 Let's now discuss the idea behind each school as revealed by the wordcloud and compare it with our knowledge about the respective philosophical view. We will discuss the schools in chronological order.
 
-- Plato: Some of the most used words are think, man, good, well, even, give. Plato the founder of the plato school was an advocate of justice, which is exactly what these words indicate.
-- Aristotle: Some of the most used words are animal, man body, reason, case, and cause, words that indicate rationality. Aristotle was indeed a supporter of reasoning. 
+- Plato: Some of the most used words are think, man, good, well, even, and give. Plato, the founder of the plato school was an advocate of justice, which is exactly what these words indicate.
+- Aristotle: Some of the most used words are animal, man, body, reason, case, and cause, words that indicate rationality. Aristotle was indeed a supporter of reasoning. 
 - Daoism: tao and heaven underline harmony and natural order. At the same time, sage and people could indicate patience and compassion towards the others.
 - Stoicism: as indicated by the wordcloud the main ideas of stoicism are wisdom (mind), justice (truth), and courage (soul).
-- Hobbes: exist, existence, freedom, order, relation underline Hobbes's concern: the sociopolical problem, i.e., how can people live together in communities peacefully?
+- Hobbes: exist, existence, freedom, order, relation underline Hobbes's concern: the sociopolitical problem, i.e., how can people live together in communities peacefully?
 - Rationalism: Some of the most common words are mind, idea, know, reason, and think. The usage of these words bolsters the idea that all aspects of life can be grasped through logical principles.
 - Empiricism: Words such as idea, body, object, reason, make, and produce indicate evidence, experience. That is exactly what empiricism is about, the idea that all concepts originate in experience.
-- German idealism: concept, consciousness, determination, think, reason and nature are words commonly used among the german idealists. If we compare these words to the ones used in empiricism we can understand that german idealism contradicst empriricms by supporting that all knowledge comes from the mind.
+- German idealism: concept, consciousness, determination, think, reason and nature are words commonly used among the german idealists. If we compare these words to the ones used in empiricism we can understand that german idealism contradicst empriricsm by supporting that all knowledge comes from the mind.
 - Capitalism: some of the most common words are capital, money, tax, proffit, pay, and interest. All these words underline that capitalism's ideas are private property, profit, and market compettion.
 - Kierkegaard: words like faith, abraham, isaac, love, god, man reveal the belief that people should have total faith in god.
 - Communism: words like work, worker, hand, machinery, and labourer refer to the working class, the proletariat as called in communism. On the ther hand, capital opposes to capitalism.
-- Nietzsche: Good, virtue, and great as some of the dominant words in the texts of the nietzsche school. that could mean that the philosophers of that schools wrote extensively about good and probably about evil as well. Man, life, mind, god supports the concept of self-realization and the idea that god does not exist.
+- Nietzsche: Good, virtue, and great are some of the dominant words in the texts of the nietzsche school. That could mean that the philosophers of that schools wrote extensively about good and probably about evil as well. Man, life, mind, god support the concept of self-realization and the idea that god does not exist.
 - Phenomenology: think, experience, consiounsness, sense, perception. All these words reveal that phenomenology studies phenomena that have been experienced consciously.
-- Feminism: this school of philosophy strived to understand and also challenge women's opperssion as revelaed by words such as even, become, and zarathustra.
-- Analytic: think, case, know, fact, theory, and question show that the philoshopers of the analytic school were supporters of logics and reasons. At the same time, term, word, and sentence reveals that the analytic school is characterized by an emphasis on linguistics. 
-- Continental:  this school of thorugt is all about politics, desire, and freedom as indicated by the words form, man, must, order, and relation.
+- Feminism: this school of philosophy strived to not only understand but also challenge women's oppression as revelaed by words such as even, become, and zarathustra.
+- Analytic: think, case, know, fact, theory, and question show that the philoshopers of the analytic school were supporters of logic and reasons. At the same time, the words term, word, and sentence reveal that the analytic school is characterized by an emphasis on linguistics. 
+- Continental:  this school of thought is all about politics, desire, and freedom as indicated by the words form, man, must, order, and relation.
 
-Beside the different ideas behind each school of philosophy, how do these schools differ in terms of writing style? It is clear that the philosopers of the older schools used words that are now antiquated.
+Beside the difference in some ideas behind each school of philosophy, how do these schools differ in terms of writing style? It is clear that the philosopers of the older schools used words that are now antiquated.
 
-So what are some of the main philosophical categories? idealism, rationality, spirituality, religion, sociopolitics, capitalism vs communism, feminism
+So **what are some of the main philosophical categories**? idealism, rationality, spirituality, religion, sociopolitics, capitalism vs communism, feminism
 
 ### Topic Modeling
 
@@ -120,13 +120,15 @@ So what are some of the main philosophical categories? idealism, rationality, sp
 
 From our so far analysis, we can reason that there are topics (e.g., labor, reason, mind, soul) that characterize some of the schools. However, although some philoshophers are in favor of some of those topics some others are against them. For example, Kierkegaard supports the idea that people should have total faith in god, while the Nitzsche school is of the opinion that god doesn't exist. So, wouldn't it be interesting to figure out how the philosophical stance or else the emotions of the philosophers towards those topics have changed over time?
 
-Emotions are associated with thoughts, feelings, and behavioral responses. The evolution of the world, causes people to respond in different way to the same topics during the course of the time. One would wonder: how can we understand how people’s emotions towards specific topics (e.g., god, mind, soul) have changed over time? By performing sentiment analysis and classifying prominent words into emotion categories (categories: Happy, Angry, Surprise, Sad, Fear).
+Emotions are associated with thoughts, feelings, and behavioral responses. The evolution of the world, causes people to respond in different way to the same topics during the course of the time. One would wonder: how can we understand how people’s emotions towards specific topics (e.g., god, mind, soul) have changed over time? By performing sentiment analysis and classifying prominent words into emotion categories (categories: Happy, Angry, Surprise, Sad, Fear) using the `text2emotion` package.
+
+The following figures show how the philosophers of each school react towards the topics *mind, reason, soul, god, labor, and woman*. The schools are presented in chronological order.
 
 <p float="left">
     <img src="../figs/sentiment-mind.png" style="width: 500px;"/>
     <img src="../figs/sentiment-reason.png" style="width: 500px;"/>
 </p>
-<<p float="left">
+<p float="left">
     <img src="../figs/sentiment-soul.png" style="width: 500px;"/>
     <img src="../figs/sentiment-god.png" style="width: 500px;"/>
 </p>
@@ -135,7 +137,13 @@ Emotions are associated with thoughts, feelings, and behavioral responses. The e
     <img src="../figs/sentiment-woman.png" style="width: 500px;"/>
 </p>
 
+Perhaps a positive/negative sentiment analysis should be performed in this case
+
+### Conclusion
 
 
+### *Potential Issues*
 
-
+The following issues should be taking into consideration when reading the blog.
+- Different schools have different number of texts and different number of total words. Consequently, it is possible that we do not have sufficient data for some schools of philosophy.
+- Although excited about the opportunity to further explore the evolution of philosophy, I still have very much to learn. The preprocessing and analysis of the data would certainly benefit from expertise in this field. For example, when removing stopwords, I encountered words that at first seems insignificant, such as "must". However, what if the worλd of philosophy "must" is an important word denoting submission or command?
