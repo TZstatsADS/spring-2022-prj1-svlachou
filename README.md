@@ -9,10 +9,13 @@ This is the first and only *individual* (as opposed to *team*) project this seme
 
 Term: Spring 2022
 
-+ Projec title: Lorem ipsum dolor sit amet
-+ This project is conducted by [your name]
++ Projec title: Evolution of Philoshopical Ideas
++ This project is conducted by Silvia (Vasiliki) Vlachou
 
-+ Project summary: [a short summary] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++ Project summary: Philosophy comes from the greek words *“philo”* (love) and *“sophia”* (wisdom). The study of philosophy is of enormous interest, since its evolution reflects the evolution of ideas, beliefs, and the human existence in general. In this project, we are going to discuss the evolution of philosophy over time. Our goal is to eventually answer the following questions:
+  * Which are the main ideas and characteristics of each school of thought?
+  * Are there similarities between different schools?
+  * How have people’s emotions towards specific topics (e.g., god, mind, soul) changed over time?
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
